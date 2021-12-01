@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, label { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      line-height: 22px;
+      }
+      legend {
+      padding: 10px;      
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 50px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      }
+      .banner img{
+        position: relative;
+        height: 400px;
+        display: flex;
+        height: 500;
+        width: calc(100%) ;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      .checkbox input[type=checkbox] {
+      display:inline-block;
+      height:15px;
+      width:15px;
+      margin-right:5px;
+      vertical-align:text-top;
+      }
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 3px 0  #006622;
+      color: #006622;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      .colums {
+      display:flex;
+      justify-content:space-between;
+      flex-direction:row;
+      flex-wrap:wrap;
+      }
+      .colums div {
+      width:48%;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 2.5px; 
+      background:  #0033ff;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #06e82c;
+      }
+    </style>
+  </head>
+  <body>
+    <body style="background-color:#83eaf1 ;">
+    <div class="testbox">
+    <form>
+      <div class="banner">
+        <img src="x.jpg" >
+      </div>
+      <br/>
+      <fieldset>
+        <legend>Sign up</legend>
+        <div class="colums">
+          <div class="item">
+            <label for="fname">FIRST NAME</label>
+            <input id="fname" type="text" name="fname" />
+          </div>
+          <div class="item">
+            <label for="lname">LAST NAME</label>
+            <input id="lname" type="text" name="lname" />
+          </div>
+          <div class="item">
+            <label for="phone">PHONE</label>
+            <input id="phone" type="tel"   name="phone" />
+          </div>
+          <div class="item">
+            <label for="email">EMAIL</label>
+            <input id="email" type="text"   name="email" />
+          </div>
+          <div class="item">
+            <label for="password">PASSWORD</label>
+            <input id="password" type="password"   name="password" />
+          </div>
+          <div class="item">
+            <label for="cpassword">CONFIRM PASSWORD</label>
+            <input id="cpassword" type="password"   name="cpassword" />
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"/>I accept terms and conditions
+            </label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"/>I want to receive news
+            </label>
+          </div>
+          <div class="btn-block">
+            <button type="submit" href="/">SIGN UP</button>
+          </div>
+      </fieldset>
+    </form>
+    </div>
+  </body>
+</html>
